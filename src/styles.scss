@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/colors';
+
+.forms{
+    padding: 4em;
+    border-radius: 0.4em;
+    box-shadow: 0px 0px 30px 1px rgb(0 0 0 / 5%);
+
+    h4{ 
+        color: $tt-color-primary; 
+        font-weight: 700;
+        font-size: 1.43em;
+        margin-bottom: 1em;
+    }
+
+    label{
+        color: $tt-color-dark-blue;
+        font-weight: 700;
+        font-size: .85em;
+    }
+    
+    .form-control{
+        background-color: $tt-color-white-2;
+        border-color: $tt-color-gray-2;
+        font-weight: 600;
+        font-size: .85em;
+    }
+
+    input.form-control{
+        height: calc(2.5em + .75rem + 2px);
+    }
+
+    .message-error{ 
+        color: $color-error; 
+        font-weight: 600;
+    }
+}
+
+
+
+@media (max-width: 992px){
+    .forms{
+        padding: 2em 1.5em;
+    }
+}
