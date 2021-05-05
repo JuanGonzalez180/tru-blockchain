@@ -36,7 +36,7 @@ export class ValidationsService {
     // RFC 2822 compliant regex
     if (
       control && control.value && control.value.match(
-        /[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$/
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       )
     ) {
       return null;
